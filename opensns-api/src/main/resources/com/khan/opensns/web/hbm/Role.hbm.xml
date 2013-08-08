@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013. 7. 12 ???? 5:14:56 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.khan.opensns.web.model">
+    <class name="Role" table="opensns_role">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string" unique-key="ux_role_name" not-null="true" unique="true" >
+        	<column name="name" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <set name="users" table="opensns_user_role" inverse="false" fetch="join" lazy="false">
+            <key>
+                <column name="role_id" />
+            </key>
+            <many-to-many column="user_id" class="User" foreign-key="fk_user_role_role" />
+        </set>
+    </class>
+</hibernate-mapping>

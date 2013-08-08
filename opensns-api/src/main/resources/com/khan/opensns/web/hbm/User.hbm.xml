@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013. 7. 12 ???? 5:14:56 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.khan.opensns.web.model">
+    <class name="User" table="opensns_user">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="username" type="string" not-null="true" unique="true" unique-key="ux_user_username">
+            <column name="username" />
+        </property>
+        <property name="password" type="string" not-null="true">
+            <column name="password" />
+        </property>
+        <property name="authKey" type="string" unique="true" unique-key="ux_user_auth_key">
+            <column name="auth_key" />
+        </property>
+        <property name="name" type="string" unique="true" unique-key="ux_user_name">
+            <column name="name" />
+        </property>
+        <property name="enabled" type="boolean">
+            <column name="enabled" />
+        </property>
+        <property name="locked" type="boolean">
+            <column name="locked" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="create_date" />
+        </property>
+        <property name="updateDate" type="timestamp" not-null="true">
+            <column name="update_date" />
+        </property>
+        <property name="lastLoginDate" type="timestamp">
+            <column name="last_login_date" />
+        </property>
+        <set name="roles" table="opensns_user_role" inverse="false" fetch="join" lazy="false">
+            <key>
+                <column name="user_id" />
+            </key>
+			<many-to-many column="role_id" class="Role" foreign-key="fk_user_role_user" />
+        </set>
+        
+        <one-to-one name="userInfo" class="UserInfo"  />
+        
+        <one-to-one name="userProperty" class="UserProperty"  />
+        
+        <set name="feeds" cascade="all" lazy="true" inverse="true">
+			<key column="user_id" not-null="true" />
+			<one-to-many class="Feed" />
+		</set>
+		<set name="feedReplies" cascade="all" lazy="true" inverse="true">
+			<key column="user_id" not-null="true" />
+			<one-to-many class="FeedReply" />
+		</set>
+		<set name="friends" cascade="all" lazy="true" inverse="true">
+			<key column="user_id" not-null="true" />
+			<one-to-many class="Friend" />
+		</set>
+		<set name="reverseFriends" cascade="all" lazy="true" inverse="true">
+			<key column="friend_id" not-null="true" />
+			<one-to-many class="Friend" />
+		</set>
+		<!-- 
+        <set name="feeds" inverse="false" table="opensns_feed" lazy="false">
+            <key>
+                <column name="id" />
+            </key>
+            <one-to-many class="Feed" />
+        </set>
+		<set name="feedReplies" inverse="false" table="opensns_feed_reply" lazy="false">
+            <key>
+                <column name="id" />
+            </key>
+            <one-to-many class="FeedReply" />
+        </set>
+        <set name="friends" inverse="false" table="opensns_friend" lazy="false">
+            <key>
+                <column name="id" />
+            </key>
+            <one-to-many class="Friend" />
+        </set>
+        <set name="reverseFriends" inverse="false" table="opensns_friend" lazy="false">
+            <key>
+                <column name="id" />
+            </key>
+            <one-to-many class="Friend" />
+        </set>
+         -->
+        
+    </class>
+</hibernate-mapping>

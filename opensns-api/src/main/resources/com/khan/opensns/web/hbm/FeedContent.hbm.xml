@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013. 7. 12 ???? 5:14:56 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.khan.opensns.web.model">
+	<class name="FeedContent" table="opensns_feed_content">
+		<id name="id" type="long">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<many-to-one class="Feed" fetch="join" name="feed" foreign-key="fk_feed_content_feed">
+			<column name="feed_id" />
+		</many-to-one>
+		<property generated="never" lazy="false" name="type" type="int">
+			<column name="type" />
+		</property>
+		<property generated="never" lazy="false" name="content" type="string">
+			<column name="content" />
+		</property>
+	</class>
+</hibernate-mapping>

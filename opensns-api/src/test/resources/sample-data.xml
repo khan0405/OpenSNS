@@ -1,0 +1,824 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+	<table name="opensns_user">
+		<column>id</column>
+		<column>username</column>
+		<column>password</column>
+		<column>auth_key</column>
+		<column>name</column>
+		<column>enabled</column>
+		<column>locked</column>
+		<column>last_login_date</column>
+		<column>create_date</column>
+		<column>update_date</column>
+		<row>
+			<value>1</value>
+			<value>admin@opensns.com</value>
+			<value>OKe1CAigE5Isv1gLAx2ay1xjdbhErT6fFnoP+ldpqtw=</value>
+			<value>OWQ2MzIwOTYzM2YxOTZlZg</value>
+			<value>Administrator</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>2</value>
+			<value>user1@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>ODA1ZTA1YzBmZGQwOTYyNA</value>
+			<value>User1</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>3</value>
+			<value>user2@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>YTllYTZhYWQ3YmRiNTA4Mw</value>
+			<value>User2</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>4</value>
+			<value>user3@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>OTg1OTAwZWViN2JlMWQwYg</value>
+			<value>User3</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>5</value>
+			<value>user4@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>YWQ0YTIxZmFlMDg5Y2ExZg</value>
+			<value>User4</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>6</value>
+			<value>user5@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>YWE5Y2UwYjFlNWE3MDNmMg</value>
+			<value>User5</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>7</value>
+			<value>user6@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>ODRhODRiYmY1MWEyOTYxOQ</value>
+			<value>User6</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>8</value>
+			<value>user7@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>OTA2YTY1OTA2MmIwNWVhMg</value>
+			<value>User7</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>9</value>
+			<value>user8@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>Yjc3NmQ1OTI0ZmQ3N2Q3MA</value>
+			<value>User8</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>10</value>
+			<value>user9@opensns.com</value>
+			<value>XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=</value>
+			<value>ODY2OGRiNGRlZmJjZTAwMw</value>
+			<value>User9</value>
+			<value>true</value>
+			<value>false</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+	</table>
+	<table name="opensns_role">
+		<column>id</column>
+		<column>name</column>
+		<column>description</column>
+		<row>
+			<value>1</value>
+			<value>ROLE_ADMIN</value>
+			<value><![CDATA[Administrator role (can edit Users)]]></value>
+		</row>
+		<row>
+			<value>2</value>
+			<value>ROLE_USER</value>
+			<value><![CDATA[Default role for all Users]]></value>
+		</row>
+	</table>
+	<table name="opensns_user_role">
+	    <column>user_id</column>
+	    <column>role_id</column>
+	    <row>
+			<value>1</value>
+			<value>1</value>
+		</row>
+		<row>
+			<value>2</value>
+			<value>2</value>
+		</row>
+		<row>
+			<value>3</value>
+			<value>2</value>
+		</row>
+		<row>
+			<value>4</value>
+			<value>2</value>
+		</row>
+		<row>
+			<value>5</value>
+			<value>2</value>
+		</row>
+		<row>
+			<value>6</value>
+			<value>2</value>
+		</row>
+		<row>
+			<value>7</value>
+			<value>2</value>
+		</row>
+		<row>
+			<value>8</value>
+			<value>2</value>
+		</row>
+		<row>
+			<value>9</value>
+			<value>2</value>
+		</row>
+		<row>
+			<value>10</value>
+			<value>2</value>
+		</row>
+	</table>
+	<table name="opensns_user_info">
+		<column>id</column>
+		<column>pause</column>
+		<column>push</column>
+		<column>back_image</column>
+		<column>back_image_thumb</column>
+		<column>profile_image</column>
+		<column>profile_image_thumb</column>
+		<column>search_enable</column>
+		<column>update_date</column>
+		<row>
+			<value>1</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c178.0.604.604/s160x160/252231_1002029915278_1941483569_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/static-ak/rsrc.php/v2/yo/r/UlIqmHJn-SK.gif</value>
+			<value>0</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>2</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>3</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>4</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>5</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>6</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>7</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>8</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>9</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>10</value>
+			<value>0</value>
+			<value>1</value>
+			<value></value>
+			<value></value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c33.33.414.414/s160x160/46558_428784347185060_404778937_n.jpg</value>
+			<value>https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/372715_100001604952894_1830011933_q.jpg</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+	</table>
+	<table name="opensns_user_property">
+		<column>id</column>
+		<column>name</column>
+		<column>value</column>
+	</table>
+	<table name="opensns_property">
+		<column>name</column>
+		<column>value</column>
+	</table>
+	<table name="opensns_friend">
+		<column>id</column>
+		<column>type</column>
+		<column>user_id</column>
+		<column>friend_id</column>
+		<column>create_date</column>
+		<column>update_date</column>
+		<row>
+			<value>1</value>
+			<value>1</value>
+			<value>1</value>
+			<value>2</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>2</value>
+			<value>1</value>
+			<value>2</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>3</value>
+			<value>1</value>
+			<value>2</value>
+			<value>3</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>4</value>
+			<value>1</value>
+			<value>2</value>
+			<value>4</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>5</value>
+			<value>1</value>
+			<value>2</value>
+			<value>5</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>6</value>
+			<value>1</value>
+			<value>3</value>
+			<value>2</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>7</value>
+			<value>1</value>
+			<value>3</value>
+			<value>5</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>8</value>
+			<value>1</value>
+			<value>3</value>
+			<value>6</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>9</value>
+			<value>1</value>
+			<value>3</value>
+			<value>8</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>10</value>
+			<value>1</value>
+			<value>3</value>
+			<value>10</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>11</value>
+			<value>1</value>
+			<value>4</value>
+			<value>2</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>12</value>
+			<value>1</value>
+			<value>4</value>
+			<value>5</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>13</value>
+			<value>1</value>
+			<value>4</value>
+			<value>7</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>14</value>
+			<value>1</value>
+			<value>4</value>
+			<value>8</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>15</value>
+			<value>1</value>
+			<value>4</value>
+			<value>9</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>16</value>
+			<value>1</value>
+			<value>5</value>
+			<value>2</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>17</value>
+			<value>1</value>
+			<value>5</value>
+			<value>3</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>18</value>
+			<value>1</value>
+			<value>5</value>
+			<value>4</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>19</value>
+			<value>1</value>
+			<value>5</value>
+			<value>9</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>20</value>
+			<value>1</value>
+			<value>5</value>
+			<value>10</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>21</value>
+			<value>1</value>
+			<value>6</value>
+			<value>3</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>22</value>
+			<value>1</value>
+			<value>6</value>
+			<value>7</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>23</value>
+			<value>1</value>
+			<value>6</value>
+			<value>8</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>24</value>
+			<value>1</value>
+			<value>6</value>
+			<value>10</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>25</value>
+			<value>1</value>
+			<value>7</value>
+			<value>4</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>26</value>
+			<value>1</value>
+			<value>7</value>
+			<value>6</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>27</value>
+			<value>1</value>
+			<value>7</value>
+			<value>9</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>28</value>
+			<value>1</value>
+			<value>7</value>
+			<value>3</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>29</value>
+			<value>1</value>
+			<value>8</value>
+			<value>4</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>30</value>
+			<value>1</value>
+			<value>8</value>
+			<value>6</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>31</value>
+			<value>1</value>
+			<value>9</value>
+			<value>4</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>32</value>
+			<value>1</value>
+			<value>9</value>
+			<value>5</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>33</value>
+			<value>1</value>
+			<value>9</value>
+			<value>7</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>34</value>
+			<value>1</value>
+			<value>9</value>
+			<value>10</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>35</value>
+			<value>1</value>
+			<value>10</value>
+			<value>3</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>36</value>
+			<value>1</value>
+			<value>10</value>
+			<value>5</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+ 			<value>37</value>
+ 			<value>1</value>
+ 			<value>10</value>
+ 			<value>6</value>
+ 			<value>2013-06-25 13:00:00</value>
+ 			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>38</value>
+			<value>1</value>
+			<value>10</value>
+			<value>9</value>
+			<value>2013-06-25 13:00:00</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+	</table>
+	<table name="opensns_feed">
+		<column>id</column>
+		<column>user_id</column>
+		<column>type</column>
+		<column>message</column>
+		<column>read_perm</column>
+		<column>create_date</column>
+		<row>
+			<value>1</value>
+			<value>1</value>
+			<value>1</value>
+			<value>Opensns에 오신 것을 환영합니다!</value>
+			<value>1</value>
+			<value>2013-06-25 13:00:00</value>
+		</row>
+		<row>
+			<value>2</value>
+			<value>1</value>
+			<value>0</value>
+			<value>Opensns 테스트입니다.</value>
+			<value>2</value>
+			<value>2013-06-25 13:00:01</value>
+		</row>
+		<row>
+			<value>3</value>
+			<value>1</value>
+			<value>0</value>
+			<value>Feed 테스트입니다.</value>
+			<value>3</value>
+			<value>2013-06-25 13:00:02</value>
+		</row>
+		<row>
+			<value>4</value>
+			<value>1</value>
+			<value>0</value>
+			<value>퍼미션 테스트</value>
+			<value>4</value>
+			<value>2013-06-25 13:00:03</value>
+		</row>
+		<row>
+			<value>5</value>
+			<value>2</value>
+			<value>0</value>
+			<value>내가 첫글!</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:00</value>
+		</row>
+		<row>
+			<value>6</value>
+			<value>2</value>
+			<value>0</value>
+			<value>친구테스트1</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>7</value>
+			<value>3</value>
+			<value>0</value>
+			<value>친구테스트2</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>8</value>
+			<value>4</value>
+			<value>0</value>
+			<value>친구테스트3</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>9</value>
+			<value>5</value>
+			<value>0</value>
+			<value>친구테스트4</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>10</value>
+			<value>6</value>
+			<value>0</value>
+			<value>친구테스트5</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>11</value>
+			<value>7</value>
+			<value>0</value>
+			<value>친구테스트6</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>12</value>
+			<value>8</value>
+			<value>0</value>
+			<value>친구테스트7</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>13</value>
+			<value>9</value>
+			<value>0</value>
+			<value>친구테스트8</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>14</value>
+			<value>10</value>
+			<value>0</value>
+			<value>친구테스트9</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+		<row>
+			<value>15</value>
+			<value>2</value>
+			<value>0</value>
+			<value>친구테스트10</value>
+			<value>2</value>
+			<value>2013-06-25 15:00:01</value>
+		</row>
+	</table>
+	<table name="opensns_feed_content">
+		<column>id</column>
+		<column>feed_id</column>
+		<column>type</column>
+		<column>content</column>
+		<row>
+			<value>1</value>
+			<value>1</value>
+			<value>1</value>
+			<value>http://static2.me2day.com/images/user/pumpyboy/profile.png?1358697012</value>
+		</row>
+		<row>
+			<value>2</value>
+			<value>1</value>
+			<value>1</value>
+			<value>http://me2daythumb.phinf.naver.net/20130701_101/pumpyboy_1372683948806gkG4Q_JPEG/pumpyboy_3613734683555004258.jpg?type=w358</value>
+		</row>
+	</table>
+	<table name="opensns_feed_reply">
+		<column>id</column>
+		<column>feed_id</column>
+		<column>user_id</column>
+		<column>type</column>
+		<column>message</column>
+		<column>create_date</column>
+	</table>
+	<table name="opensns_feed_like">
+		<column>id</column>
+		<column>feed_id</column>
+		<column>user_id</column>
+		<column>type</column>
+		<column>create_date</column>
+	</table>
+	<table name="opensns_group">
+		<column>id</column>
+		<column>name</column>
+		<column>description</column>
+		<column>owner_id</column>
+		<column>create_date</column>
+		<column>update_date</column>
+	</table>
+	<table name="opensns_group_info">
+		<column>id</column>
+		<column>pause</column>
+		<column>open</column>
+		<column>back_image</column>
+		<column>back_image_thumb</column>
+		<column>profile_image</column>
+		<column>profile_image_thumb</column>
+		<column>search_enable</column>
+		<column>update_date</column>
+	</table>
+	<table name="opensns_group_user">
+		<column>id</column>
+		<column>group_id</column>
+		<column>user_id</column>
+		<column>type</column>
+		<column>create_date</column>
+		<column>update_date</column>
+	</table>
+</dataset>

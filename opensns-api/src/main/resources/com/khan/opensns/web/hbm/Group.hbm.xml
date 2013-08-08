@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013. 7. 12 ???? 5:14:56 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.khan.opensns.web.model">
+    <class name="Group" table="opensns_group">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="string" unique="true" unique-key="ux_group_name">
+            <column name="name" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <many-to-one name="owner" class="User" fetch="join" foreign-key="fk_group_owner" >
+            <column name="owner_id" />
+        </many-to-one>
+        <property name="createDate" type="timestamp" not-null="true">
+            <column name="create_date" />
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name="update_date" />
+        </property>
+        
+        <one-to-one name="groupInfo" class="GroupInfo" />
+        
+		<set name="groupUsers" cascade="all" lazy="true" inverse="true">
+			<key column="group_id" not-null="true" />
+			<one-to-many class="GroupUser" />
+		</set>
+    </class>
+</hibernate-mapping>

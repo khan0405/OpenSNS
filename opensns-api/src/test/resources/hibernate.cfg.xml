@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<!-- Enable Hibernate's automatic session context management ( jta | thread 
+			| managed | custom.Class ) -->
+		<property name="hibernate.current_session_context_class">thread</property>
+		<!-- hibernate.connection.driver_class=com.mysql.jdbc.Driver hibernate.connection.url=jdbc:mysql://localhost:3306/opensnsdb?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&sessionVariables=FOREIGN_KEY_CHECKS=0 
+			hibernate.connection.username=opensns hibernate.connection.password=pwdpwd123 
+			UTF-8 -->
+		<property name="hibernate.connection.useUnicode">true</property>
+		<property name="hibernate.connection.characterEncoding">utf-8</property>
+		<!-- Query substitutions <property name="hibernate.query.substitutions">true 
+			'Y', false 'N'</property> Echo all executed SQL to stdout -->
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.use_sql_comments">true</property>
+		<!-- Drop and re-create the database schema on start <property name="hibernate.archive.autodetection">hbm</property> -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- c3p0 -->
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.max_size">20</property>
+		<property name="hibernate.c3p0.timeout">300</property>
+		<property name="hibernate.c3p0.max_statements">50</property>
+		<property name="hibernate.c3p0.idle_test_period">3000</property>
+		<property name="hibernate.generate_statistics">true</property>
+		
+		<mapping resource="com/khan/opensns/web/hbm/Role.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/User.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/UserInfo.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/UserProperty.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/Property.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/Feed.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/FeedContent.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/FeedReply.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/FeedLike.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/Friend.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/Group.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/GroupInfo.hbm.xml" />
+		<mapping resource="com/khan/opensns/web/hbm/GroupUser.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

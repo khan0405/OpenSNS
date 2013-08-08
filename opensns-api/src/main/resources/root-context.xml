@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+	
+	<!-- 프로퍼타 파일 로딩 -->
+	<util:properties id="jdbc" location="classpath:properties/jdbc.properties"/>
+    <util:properties id="setting" location="classpath:properties/setting.properties"/>
+    <util:properties id="mail" location="classpath:properties/mail.properties"/>
+    
+    <!-- Hibernate 설정 로드 -->
+    <import resource="root-context-hibernate.xml"/>
+    
+    <!-- JPA Database 설정 로드 
+    <import resource="root-context-jpa.xml"/>
+    -->
+    <!-- Mybatis 설정 로드 
+    <import resource="root-context-mybatis.xml"/>
+    -->
+</beans>

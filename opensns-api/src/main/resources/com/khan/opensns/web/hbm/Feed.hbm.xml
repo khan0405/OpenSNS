@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013. 7. 12 ???? 5:14:56 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.khan.opensns.web.model">
+    <class name="Feed" table="opensns_feed">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="user" class="User" fetch="join" foreign-key="fk_feed_user" >
+            <column name="user_id" />
+        </many-to-one>
+        <many-to-one name="toUser" class="User" fetch="join" foreign-key="fk_feed_to_user" >
+            <column name="to_user" />
+        </many-to-one>
+        <many-to-one name="toGroup" class="Group" fetch="join" foreign-key="fk_feed_to_group" >
+            <column name="to_group" />
+        </many-to-one>
+        <property name="type" type="int">
+            <column name="type" />
+        </property>
+        <property name="message" type="string">
+            <column name="message" />
+        </property>
+        <property name="readPerm" type="int">
+            <column name="read_perm" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="create_date" />
+        </property>
+        <set name="contents" cascade="all" lazy="true" inverse="true">
+        	<key column="feed_id" not-null="true" />
+        	<one-to-many class="FeedContent" />
+        </set>
+		<set name="replies" cascade="all" lazy="true" inverse="true">
+			<key column="feed_id" not-null="true" />
+			<one-to-many class="FeedReply" />
+		</set>
+		<set name="likes" cascade="all" lazy="true" inverse="true">
+			<key column="feed_id" not-null="true" />
+			<one-to-many class="FeedLike" />
+		</set>
+		<!--
+        <set name="contents" inverse="false" table="opensns_feed_content" lazy="false">
+            <key foreign-key="fk_feed_content_feed">
+                <column name="feed_id" />
+            </key>
+            <one-to-many class="FeedContent" />
+        </set>
+        <set name="replies" inverse="false" table="opensns_feed_reply" lazy="false">
+            <key foreign-key="fk_feed_reply_feed">
+                <column name="feed_id" not-null="true"/>
+            </key>
+            <one-to-many class="FeedReply" />
+        </set>
+         -->
+    </class>
+</hibernate-mapping>

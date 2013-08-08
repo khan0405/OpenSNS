@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013. 7. 12 ???? 5:14:56 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.khan.opensns.web.model">
+    <class name="GroupInfo" table="opensns_group_info">
+        <id name="id" type="long" >
+            <column name="id" />
+			<generator class="foreign">
+				<param name="property">group</param>
+			</generator>
+        </id>
+        <property name="pause" type="boolean">
+            <column name="pause" />
+        </property>
+        <property name="open" type="boolean">
+            <column name="open" />
+        </property>
+        <property name="searchEnable" type="boolean">
+            <column name="search_enable" />
+        </property>
+        <property name="backImage" type="string">
+            <column name="back_image" />
+        </property>
+        <property name="backImageThumb" type="string">
+            <column name="back_image_thumb" />
+        </property>
+        <property name="profileImage" type="string">
+            <column name="profile_image" />
+        </property>
+        <property name="profileImageThumb" type="string">
+            <column name="profile_image_thumb" />
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name="update_date" />
+        </property>
+        <one-to-one name="group" class="Group" foreign-key="fk_group" constrained="true" />
+    </class>
+</hibernate-mapping>
