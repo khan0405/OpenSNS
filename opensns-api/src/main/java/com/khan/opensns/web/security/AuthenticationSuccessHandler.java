@@ -24,8 +24,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.service.UserService;
+import com.khan.opensns.model.User;
+import com.khan.opensns.service.UserService;
 
 /**
  * <PRE>

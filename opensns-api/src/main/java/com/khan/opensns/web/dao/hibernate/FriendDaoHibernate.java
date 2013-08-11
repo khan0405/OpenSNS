@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.khan.opensns.web.dao.FriendDao;
-import com.khan.opensns.web.model.Friend;
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.model.persistence.FriendType;
+import com.khan.opensns.dao.FriendDao;
+import com.khan.opensns.model.Friend;
+import com.khan.opensns.model.User;
+import com.khan.opensns.model.persistence.FriendType;
 
 @Repository
 public class FriendDaoHibernate extends GenericDaoHibernate<Friend, Friend.Id> implements FriendDao {

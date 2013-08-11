@@ -1,5 +1,7 @@
 package com.khan.opensns.web.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.AuthorizationServiceException;
 import org.springframework.stereotype.Controller;
@@ -12,12 +14,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.khan.opensns.web.dto.BodyResponse;
-import com.khan.opensns.web.model.Group;
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.service.GroupService;
-import com.khan.opensns.web.service.UserService;
-import com.khan.opensns.web.vo.GroupVo;
+import com.khan.opensns.dto.BodyResponse;
+import com.khan.opensns.dto.DataResponse;
+import com.khan.opensns.model.Group;
+import com.khan.opensns.model.User;
+import com.khan.opensns.service.GroupService;
+import com.khan.opensns.service.UserService;
+import com.khan.opensns.vo.GroupVo;
 
 @Controller
 @RequestMapping("/api/group")
@@ -39,11 +42,30 @@ public class GroupController extends BaseController {
 	}
 	
 	@RequestMapping(method=RequestMethod.GET)
-	public @ResponseBody BodyResponse getGroupList(@RequestParam Integer page, @RequestParam Integer size) throws Exception {
+	public @ResponseBody BodyResponse findGroup(@RequestHeader String authKey, @RequestParam String searchText) throws Exception {
+		User user = userService.loadUserByAuthKey(authKey);
 		
+		List<Group> groups = groupService.findGroup(user, searchText);
 		
+		DataResponse response = new DataResponse(groups);
 		
-		return null;
+		return response;
+	}
+	
+	@RequestMapping(method=RequestMethod.GET)
+	public @ResponseBody BodyResponse getRecommandGroups(@RequestHeader String authKey,@RequestParam(defaultValue="1") Integer page, @RequestParam(defaultValue="30") Integer size) throws Exception {
+		User user = userService.loadUserByAuthKey(authKey);
+		
+		List<Group> groups = groupService.getRecommandGroups(user, page, size);
+		
+		return new DataResponse(groups);
+	}
+	
+	@RequestMapping(method=RequestMethod.GET)
+	public @ResponseBody BodyResponse getGroupList(@RequestParam(defaultValue="1") Integer page, @RequestParam(defaultValue="30") Integer size) throws Exception {
+		List<Group> groups = groupService.getGroups(page, size);
+		
+		return new DataResponse(groups);
 	}
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
@@ -69,6 +91,5 @@ public class GroupController extends BaseController {
 		
 		return emptyResponse();
 	}
-	
 	
 }

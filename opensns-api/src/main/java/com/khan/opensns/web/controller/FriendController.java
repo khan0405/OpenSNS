@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.model.persistence.FriendType;
-import com.khan.opensns.web.service.FriendService;
-import com.khan.opensns.web.service.UserService;
+import com.khan.opensns.model.User;
+import com.khan.opensns.model.persistence.FriendType;
+import com.khan.opensns.service.FriendService;
+import com.khan.opensns.service.UserService;
 
 /**
  * <PRE>

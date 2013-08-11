@@ -28,7 +28,6 @@
 	</properties>
 	
 	<dependencies>
-	
 		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>

@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Repository;
 
-import com.khan.opensns.web.dao.RoleDao;
-import com.khan.opensns.web.model.Role;
+import com.khan.opensns.dao.RoleDao;
+import com.khan.opensns.model.Role;
 
 @Repository
 public class RoleDaoHibernate extends GenericDaoHibernate<Role, Integer> implements RoleDao {

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/milenmile/!svn/ver/36/server/trunk/MileNMile-cms/src/main/webapp/WEB-INF/views/includes
+END
+taglibs.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/milenmile/!svn/ver/36/server/trunk/MileNMile-cms/src/main/webapp/WEB-INF/views/includes/taglibs.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/milenmile/!svn/ver/36/server/trunk/MileNMile-cms/src/main/webapp/WEB-INF/views/includes/footer.jsp
+END
+sidebar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/milenmile/!svn/ver/36/server/trunk/MileNMile-cms/src/main/webapp/WEB-INF/views/includes/sidebar.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/milenmile/!svn/ver/36/server/trunk/MileNMile-cms/src/main/webapp/WEB-INF/views/includes/header.jsp
+END
+menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/milenmile/!svn/ver/36/server/trunk/MileNMile-cms/src/main/webapp/WEB-INF/views/includes/menu.jsp
+END
+indicator.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/milenmile/!svn/ver/36/server/trunk/MileNMile-cms/src/main/webapp/WEB-INF/views/includes/indicator.jsp
+END

@@ -20,14 +20,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.khan.opensns.dto.BodyResponse;
+import com.khan.opensns.dto.DataResponse;
+import com.khan.opensns.model.User;
+import com.khan.opensns.service.FeedService;
+import com.khan.opensns.service.UserNotFoundException;
+import com.khan.opensns.service.UserService;
+import com.khan.opensns.vo.FeedVo;
 import com.khan.opensns.web.annotation.Api;
-import com.khan.opensns.web.dto.BodyResponse;
-import com.khan.opensns.web.dto.DataResponse;
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.service.FeedService;
-import com.khan.opensns.web.service.UserNotFoundException;
-import com.khan.opensns.web.service.UserService;
-import com.khan.opensns.web.vo.FeedVo;
 
 /**
  * <PRE>

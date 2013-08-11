@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.khan.opensns.web.dto.BodyResponse;
-import com.khan.opensns.web.dto.ResponseError;
-import com.khan.opensns.web.service.BadParameterException;
+import com.khan.opensns.dto.BodyResponse;
+import com.khan.opensns.dto.ResponseError;
+import com.khan.opensns.service.BadParameterException;
 /**
  * This class for Controller, implement base exception handler methods and empty view method.
  * 

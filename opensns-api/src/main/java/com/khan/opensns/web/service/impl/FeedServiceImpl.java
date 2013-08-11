@@ -22,25 +22,25 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartRequest;
 
-import com.khan.opensns.web.dao.FeedContentDao;
-import com.khan.opensns.web.dao.FeedDao;
-import com.khan.opensns.web.dao.FeedLikeDao;
-import com.khan.opensns.web.dao.FeedReplyDao;
-import com.khan.opensns.web.model.Feed;
-import com.khan.opensns.web.model.FeedContent;
-import com.khan.opensns.web.model.FeedLike;
-import com.khan.opensns.web.model.FeedReply;
-import com.khan.opensns.web.model.Friend;
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.model.persistence.FriendType;
-import com.khan.opensns.web.service.FeedService;
-import com.khan.opensns.web.service.FriendService;
-import com.khan.opensns.web.service.ImageService;
-import com.khan.opensns.web.service.UserNotFoundException;
-import com.khan.opensns.web.service.UserService;
-import com.khan.opensns.web.vo.FeedLikeVo;
-import com.khan.opensns.web.vo.FeedReplyVo;
-import com.khan.opensns.web.vo.ImageVo;
+import com.khan.opensns.dao.FeedContentDao;
+import com.khan.opensns.dao.FeedDao;
+import com.khan.opensns.dao.FeedLikeDao;
+import com.khan.opensns.dao.FeedReplyDao;
+import com.khan.opensns.model.Feed;
+import com.khan.opensns.model.FeedContent;
+import com.khan.opensns.model.FeedLike;
+import com.khan.opensns.model.FeedReply;
+import com.khan.opensns.model.Friend;
+import com.khan.opensns.model.User;
+import com.khan.opensns.model.persistence.FriendType;
+import com.khan.opensns.service.FeedService;
+import com.khan.opensns.service.FriendService;
+import com.khan.opensns.service.ImageService;
+import com.khan.opensns.service.UserNotFoundException;
+import com.khan.opensns.service.UserService;
+import com.khan.opensns.vo.FeedLikeVo;
+import com.khan.opensns.vo.FeedReplyVo;
+import com.khan.opensns.vo.ImageVo;
 
 /**
  * <PRE>

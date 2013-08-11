@@ -26,22 +26,22 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.multipart.MultipartRequest;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.khan.opensns.dto.BodyResponse;
+import com.khan.opensns.dto.DataResponse;
+import com.khan.opensns.model.Feed;
+import com.khan.opensns.model.FeedContent;
+import com.khan.opensns.model.FeedLike;
+import com.khan.opensns.model.FeedReply;
+import com.khan.opensns.model.User;
+import com.khan.opensns.model.persistence.FeedType;
+import com.khan.opensns.service.FeedService;
+import com.khan.opensns.service.UserNotFoundException;
+import com.khan.opensns.service.UserService;
+import com.khan.opensns.vo.FeedDetailVo;
+import com.khan.opensns.vo.FeedLikeVo;
+import com.khan.opensns.vo.FeedReplyVo;
+import com.khan.opensns.vo.FeedVo;
 import com.khan.opensns.web.annotation.Api;
-import com.khan.opensns.web.dto.BodyResponse;
-import com.khan.opensns.web.dto.DataResponse;
-import com.khan.opensns.web.model.Feed;
-import com.khan.opensns.web.model.FeedContent;
-import com.khan.opensns.web.model.FeedLike;
-import com.khan.opensns.web.model.FeedReply;
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.model.persistence.FeedType;
-import com.khan.opensns.web.service.FeedService;
-import com.khan.opensns.web.service.UserNotFoundException;
-import com.khan.opensns.web.service.UserService;
-import com.khan.opensns.web.vo.FeedDetailVo;
-import com.khan.opensns.web.vo.FeedLikeVo;
-import com.khan.opensns.web.vo.FeedReplyVo;
-import com.khan.opensns.web.vo.FeedVo;
 
 /**
  * <PRE>

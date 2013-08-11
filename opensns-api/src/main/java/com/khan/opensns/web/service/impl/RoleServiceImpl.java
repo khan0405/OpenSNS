@@ -15,9 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.khan.opensns.web.dao.RoleDao;
-import com.khan.opensns.web.model.Role;
-import com.khan.opensns.web.service.RoleService;
+import com.khan.opensns.dao.RoleDao;
+import com.khan.opensns.model.Role;
+import com.khan.opensns.service.RoleService;
 
 /**
  * <PRE>

@@ -27,16 +27,16 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.khan.opensns.dto.BodyResponse;
+import com.khan.opensns.model.User;
+import com.khan.opensns.service.FeedService;
+import com.khan.opensns.service.UserExistsException;
+import com.khan.opensns.service.UserNotFoundException;
+import com.khan.opensns.service.UserService;
+import com.khan.opensns.util.PasswordUtil;
+import com.khan.opensns.vo.LoginVo;
+import com.khan.opensns.vo.UserVo;
 import com.khan.opensns.web.annotation.Api;
-import com.khan.opensns.web.dto.BodyResponse;
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.service.FeedService;
-import com.khan.opensns.web.service.UserExistsException;
-import com.khan.opensns.web.service.UserNotFoundException;
-import com.khan.opensns.web.service.UserService;
-import com.khan.opensns.web.util.PasswordUtil;
-import com.khan.opensns.web.vo.LoginVo;
-import com.khan.opensns.web.vo.UserVo;
 
 
 /**

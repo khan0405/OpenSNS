@@ -212,5 +212,7 @@
 	
 	<modules>
 		<module>opensns-api</module>
+		<module>opensns-web</module>
+		<module>opensns-core</module>
 	</modules>
 </project>

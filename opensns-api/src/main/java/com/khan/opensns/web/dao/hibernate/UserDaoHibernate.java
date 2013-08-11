@@ -6,9 +6,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.khan.opensns.web.dao.UserDao;
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.service.UserNotFoundException;
+import com.khan.opensns.dao.UserDao;
+import com.khan.opensns.model.User;
+import com.khan.opensns.service.UserNotFoundException;
 
 @Repository
 public class UserDaoHibernate extends GenericDaoHibernate<User, Long> implements UserDao {

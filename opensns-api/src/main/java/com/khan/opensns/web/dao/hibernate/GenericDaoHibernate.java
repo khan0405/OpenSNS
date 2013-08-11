@@ -11,7 +11,7 @@ import org.hibernate.criterion.Criterion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.khan.opensns.web.dao.GenericDao;
+import com.khan.opensns.dao.GenericDao;
 
 public class GenericDaoHibernate<T, PK extends Serializable> implements GenericDao<T, PK> {
 

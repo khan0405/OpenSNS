@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.khan.opensns.web.dao.FeedDao;
-import com.khan.opensns.web.model.Feed;
-import com.khan.opensns.web.model.Group;
-import com.khan.opensns.web.model.User;
+import com.khan.opensns.dao.FeedDao;
+import com.khan.opensns.model.Feed;
+import com.khan.opensns.model.Group;
+import com.khan.opensns.model.User;
 
 @Repository
 public class FeedDaoHibernate extends GenericDaoHibernate<Feed, Long> implements FeedDao {

@@ -25,19 +25,19 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.khan.opensns.web.dao.UserDao;
-import com.khan.opensns.web.dao.UserInfoDao;
-import com.khan.opensns.web.model.User;
-import com.khan.opensns.web.model.UserInfo;
-import com.khan.opensns.web.service.FileSaveService;
-import com.khan.opensns.web.service.ImageService;
-import com.khan.opensns.web.service.RoleService;
-import com.khan.opensns.web.service.UserExistsException;
-import com.khan.opensns.web.service.UserNotFoundException;
-import com.khan.opensns.web.service.UserService;
-import com.khan.opensns.web.util.KeyGenerator;
-import com.khan.opensns.web.vo.ImageVo;
-import com.khan.opensns.web.vo.UserVo;
+import com.khan.opensns.dao.UserDao;
+import com.khan.opensns.dao.UserInfoDao;
+import com.khan.opensns.model.User;
+import com.khan.opensns.model.UserInfo;
+import com.khan.opensns.service.FileSaveService;
+import com.khan.opensns.service.ImageService;
+import com.khan.opensns.service.RoleService;
+import com.khan.opensns.service.UserExistsException;
+import com.khan.opensns.service.UserNotFoundException;
+import com.khan.opensns.service.UserService;
+import com.khan.opensns.util.KeyGenerator;
+import com.khan.opensns.vo.ImageVo;
+import com.khan.opensns.vo.UserVo;
 
 /**
  * <PRE>

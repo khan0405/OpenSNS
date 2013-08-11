@@ -12,9 +12,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.khan.opensns.web.service.FileSaveService;
-import com.khan.opensns.web.service.ImageService;
-import com.khan.opensns.web.vo.ImageVo;
+import com.khan.opensns.service.FileSaveService;
+import com.khan.opensns.service.ImageService;
+import com.khan.opensns.vo.ImageVo;
 
 @Service(value="imageService")
 public class ImageServiceImpl implements ImageService {

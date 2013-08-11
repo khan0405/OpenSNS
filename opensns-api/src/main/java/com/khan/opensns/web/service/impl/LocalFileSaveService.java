@@ -12,8 +12,8 @@ import java.net.URLConnection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.khan.opensns.web.service.FileSaveService;
-import com.khan.opensns.web.util.FileUtil;
+import com.khan.opensns.service.FileSaveService;
+import com.khan.opensns.util.FileUtil;
 
 public class LocalFileSaveService implements FileSaveService {
 	
