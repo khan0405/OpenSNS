@@ -62,7 +62,7 @@
 	</bean>
     
     <!-- <bean id="authenticationSuccessHandler" class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler"> -->
-    <bean id="authenticationSuccessHandler" class="com.khan.opensns.web.security.AuthenticationSuccessHandler">
+    <bean id="authenticationSuccessHandler" class="com.khan.opensns.api.security.AuthenticationSuccessHandler">
     	<property name="alwaysUseDefaultTargetUrl" value="true" />
     	<property name="targetUrlParameter" value="redirect_url" />
     	<property name="defaultTargetUrl" value="/" />

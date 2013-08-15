@@ -24,7 +24,7 @@
 		</property>
 		<property name="packagesToScan">
 			<list>
-				<value>com.khan.opensns.web.hbm</value>
+				<value>com.khan.opensns.api.hbm</value>
 			</list>
 		</property>
 		
@@ -52,7 +52,7 @@
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	
 	<!-- Repository 설정 -->
-	<jpa:repositories base-package="com.khan.opensns.web.repository" 
+	<jpa:repositories base-package="com.khan.opensns.api.repository" 
 		entity-manager-factory-ref="entityManagerFactory" 
 		transaction-manager-ref="transactionManager" />
 	
