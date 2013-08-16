@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2013. 7. 12 ???? 5:14:56 by Hibernate Tools 3.4.0.CR1 -->
-<hibernate-mapping package="com.khan.opensns.api.model">
+<hibernate-mapping package="com.khan.opensns.model">
     <class name="FeedLike" table="opensns_feed_like">
         <id name="id" type="long">
             <column name="id" />

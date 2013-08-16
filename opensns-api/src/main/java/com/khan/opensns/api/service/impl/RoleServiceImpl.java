@@ -16,8 +16,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.khan.opensns.api.dao.RoleDao;
+import com.khan.opensns.api.service.RoleService;
 import com.khan.opensns.model.Role;
-import com.khan.opensns.service.RoleService;
 
 /**
  * <PRE>

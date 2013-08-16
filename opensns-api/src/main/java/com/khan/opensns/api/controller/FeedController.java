@@ -27,6 +27,9 @@ import org.springframework.web.multipart.MultipartRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.khan.opensns.api.annotation.Api;
+import com.khan.opensns.api.service.FeedService;
+import com.khan.opensns.api.service.UserService;
+import com.khan.opensns.dao.ListOrder;
 import com.khan.opensns.dto.BodyResponse;
 import com.khan.opensns.dto.DataResponse;
 import com.khan.opensns.model.Feed;
@@ -35,9 +38,8 @@ import com.khan.opensns.model.FeedLike;
 import com.khan.opensns.model.FeedReply;
 import com.khan.opensns.model.User;
 import com.khan.opensns.model.persistence.FeedType;
-import com.khan.opensns.service.FeedService;
 import com.khan.opensns.service.UserNotFoundException;
-import com.khan.opensns.service.UserService;
+import com.khan.opensns.util.StringUtil;
 import com.khan.opensns.vo.FeedDetailVo;
 import com.khan.opensns.vo.FeedLikeVo;
 import com.khan.opensns.vo.FeedReplyVo;
@@ -93,14 +95,22 @@ public class FeedController extends BaseController {
 	
 	@Api(auth=true)
 	@RequestMapping(value="/newsfeed", method = RequestMethod.GET)
-	public @ResponseBody BodyResponse getNewsFeed(@RequestHeader String authKey, @RequestParam(defaultValue="1") Integer page, @RequestParam(defaultValue="30") Integer size) throws UserNotFoundException {
+	public @ResponseBody BodyResponse getNewsFeed(
+			@RequestHeader String authKey, 
+			@RequestParam(defaultValue="0") Long lastId,
+			@RequestParam(defaultValue="REFRESH") String order,
+			@RequestParam(defaultValue="30") Integer size) throws UserNotFoundException {
+		log.info("/api/feed/newsfeed");
 		User user = userService.loadUserByAuthKey(authKey);
-		List<FeedVo> newsFeeds = FeedVo.transferVo(feedService.getNewsFeeds(user, page - 1, size));
+		List<FeedVo> newsFeeds = FeedVo.transferVo(feedService.getNewsFeeds(user, lastId, ListOrder.valueOf(order), size));
 		return new DataResponse(newsFeeds);
 	}
 	
 	@RequestMapping(value="/popfeed", method = RequestMethod.GET)
-	public @ResponseBody BodyResponse getPopFeed(@RequestParam(defaultValue="1") Integer page, @RequestParam(defaultValue="30") Integer size) throws UserNotFoundException {
+	public @ResponseBody BodyResponse getPopFeed(
+			@RequestParam(defaultValue="1") Integer page, 
+			@RequestParam(defaultValue="30") Integer size) throws UserNotFoundException {
+		
 		List<FeedVo> popFeeds = FeedVo.transferVo(feedService.getPopularFeeds(page - 1, size));
 		return new DataResponse(popFeeds);
 	}

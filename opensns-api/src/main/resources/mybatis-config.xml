@@ -14,13 +14,13 @@
 		<setting name="defaultStatementTimeout" value="5000" />
 	</settings>
 	<typeAliases>
-		<typeAlias type="com.khan.opensns.api.model.Feed" alias="Feed"/>
-		<typeAlias type="com.khan.opensns.api.model.FeedContent" alias="FeedContent"/>
-		<typeAlias type="com.khan.opensns.api.model.FeedReply" alias="FeedReply"/>
-		<typeAlias type="com.khan.opensns.api.model.Friend" alias="Friend"/>
-		<typeAlias type="com.khan.opensns.api.model.Role" alias="Role"/>
-		<typeAlias type="com.khan.opensns.api.model.User" alias="User"/>
-		<typeAlias type="com.khan.opensns.api.model.UserInfo" alias="UserInfo"/>
+		<typeAlias type="com.khan.opensns.model.Feed" alias="Feed"/>
+		<typeAlias type="com.khan.opensns.model.FeedContent" alias="FeedContent"/>
+		<typeAlias type="com.khan.opensns.model.FeedReply" alias="FeedReply"/>
+		<typeAlias type="com.khan.opensns.model.Friend" alias="Friend"/>
+		<typeAlias type="com.khan.opensns.model.Role" alias="Role"/>
+		<typeAlias type="com.khan.opensns.model.User" alias="User"/>
+		<typeAlias type="com.khan.opensns.model.UserInfo" alias="UserInfo"/>
 		<typeAlias type="com.khan.opensns.api.dto.Criteria" alias="Criteria"/>
 	</typeAliases>
 </configuration>

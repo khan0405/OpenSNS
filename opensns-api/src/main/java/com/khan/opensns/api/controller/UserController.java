@@ -28,12 +28,12 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.khan.opensns.api.annotation.Api;
+import com.khan.opensns.api.service.FeedService;
+import com.khan.opensns.api.service.UserService;
 import com.khan.opensns.dto.BodyResponse;
 import com.khan.opensns.model.User;
-import com.khan.opensns.service.FeedService;
 import com.khan.opensns.service.UserExistsException;
 import com.khan.opensns.service.UserNotFoundException;
-import com.khan.opensns.service.UserService;
 import com.khan.opensns.util.PasswordUtil;
 import com.khan.opensns.vo.LoginVo;
 import com.khan.opensns.vo.UserVo;

@@ -21,12 +21,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.khan.opensns.api.annotation.Api;
+import com.khan.opensns.api.service.FeedService;
+import com.khan.opensns.api.service.UserService;
+import com.khan.opensns.dao.ListOrder;
 import com.khan.opensns.dto.BodyResponse;
 import com.khan.opensns.dto.DataResponse;
 import com.khan.opensns.model.User;
-import com.khan.opensns.service.FeedService;
 import com.khan.opensns.service.UserNotFoundException;
-import com.khan.opensns.service.UserService;
 import com.khan.opensns.vo.FeedVo;
 
 /**
@@ -53,11 +54,12 @@ public class UserFeedController extends BaseController {
 	public @ResponseBody BodyResponse getUserFeeds(
 			@RequestHeader String authKey, 
 			@PathVariable String name, 
-			@RequestParam(defaultValue="1") Integer page, 
+			@RequestParam(defaultValue="0") Long lastId,
+			@RequestParam(defaultValue="REFRESH") String order,
 			@RequestParam(defaultValue="30") Integer size) throws UserNotFoundException {
 		
 		User user = userService.loadUserByAuthKey(authKey);
-		List<FeedVo> userFeeds = FeedVo.transferVo(feedService.getUserFeeds(user, name, page, size));
+		List<FeedVo> userFeeds = FeedVo.transferVo(feedService.getUserFeeds(user, name, lastId, ListOrder.valueOf(order), size));
 		return new DataResponse(userFeeds);
 	}
 	

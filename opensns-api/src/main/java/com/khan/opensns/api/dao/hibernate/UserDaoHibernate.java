@@ -2,6 +2,9 @@ package com.khan.opensns.api.dao.hibernate;
 
 import java.util.List;
 
+import org.hibernate.Query;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,7 +15,7 @@ import com.khan.opensns.service.UserNotFoundException;
 
 @Repository
 public class UserDaoHibernate extends GenericDaoHibernate<User, Long> implements UserDao {
-	
+	private final Logger log = LoggerFactory.getLogger(getClass());
 	public UserDaoHibernate() {
 		super(User.class);
 	}
@@ -46,7 +49,7 @@ public class UserDaoHibernate extends GenericDaoHibernate<User, Long> implements
     @Transactional(readOnly=true)
 	@Override @SuppressWarnings("unchecked")
 	public User loadByAuthKey(String authKey) throws UserNotFoundException {
-		List<User> users = (List<User>)getSession().createQuery("from User u where u.authKey = :authKey")
+    	List<User> users = (List<User>)getSession().createQuery("from User u where u.authKey=:authKey")
 				.setString("authKey", authKey)
 				.setCacheable(true)
 				.list();

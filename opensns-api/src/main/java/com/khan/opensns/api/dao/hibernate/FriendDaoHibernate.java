@@ -18,7 +18,7 @@ public class FriendDaoHibernate extends GenericDaoHibernate<Friend, Friend.Id> i
 	@Override @SuppressWarnings("unchecked")
 	public List<Friend> getByFriendType(User user, FriendType type) {
 		List<Friend> friends = (List<Friend>) getSession()
-				.createQuery("from Friend f where f.id.userId = :userId and f.type = :type")
+				.createQuery("from Friend f where f.user.id = :userId and f.type = :type")
 				.setLong("userId", user.getId())
 				.setInteger("type", type.getValue())
 				.list();
@@ -28,7 +28,7 @@ public class FriendDaoHibernate extends GenericDaoHibernate<Friend, Friend.Id> i
 	@Override @SuppressWarnings("unchecked")
 	public List<Friend> getByFriendType(User user, FriendType type, int page, int size) {
 		List<Friend> friends = (List<Friend>) getSession()
-				.createQuery("from Friend f where f.id.userId = :userId and f.type = :type")
+				.createQuery("from Friend f where f.user.id = :userId and f.type = :type")
 				.setLong("userId", user.getId())
 				.setInteger("type", type.getValue())
 				.setFirstResult(page * size)

@@ -10,11 +10,11 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+import com.khan.opensns.api.service.UserService;
 import com.khan.opensns.model.User;
 import com.khan.opensns.service.ApiUrlService;
 import com.khan.opensns.service.BadParameterException;
 import com.khan.opensns.service.UserNotFoundException;
-import com.khan.opensns.service.UserService;
 
 @Component(value="authInterceptor")
 public class AuthInterceptor extends HandlerInterceptorAdapter {

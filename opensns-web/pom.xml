@@ -9,4 +9,11 @@
 	<artifactId>opensns-web</artifactId>
 	<packaging>war</packaging>
 	<name>opensns-web</name>
+	<dependencies>
+		<dependency>
+			<groupId>com.khan</groupId>
+			<artifactId>opensns-core</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
 </project>

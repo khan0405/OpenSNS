@@ -2,26 +2,26 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2013. 7. 12 ???? 5:14:56 by Hibernate Tools 3.4.0.CR1 -->
-<hibernate-mapping package="com.khan.opensns.api.model">
-    <class name="Friend" table="opensns_friend">
+<hibernate-mapping package="com.khan.opensns.model">
+    <class name="FeedReply" table="opensns_feed_reply">
         <id name="id" type="long">
             <column name="id" />
             <generator class="native" />
         </id>
+        <many-to-one name="feed" class="Feed" fetch="join" foreign-key="fk_feed_reply_feed">
+            <column name="feed_id" />
+        </many-to-one>
+        <many-to-one name="user" class="User" fetch="join" foreign-key="fk_feed_reply_user">
+            <column name="user_id" />
+        </many-to-one>
         <property name="type" type="int">
             <column name="type" />
         </property>
-        <many-to-one name="user" class="User" fetch="join" foreign-key="fk_friend_user">
-            <column name="user_id" />
-        </many-to-one>
-        <many-to-one name="friend" class="User" fetch="join" foreign-key="fk_friend_friend">
-            <column name="friend_id" />
-        </many-to-one>
+        <property name="message" type="string">
+            <column name="message" />
+        </property>
         <property name="createDate" type="timestamp">
             <column name="create_date" />
-        </property>
-        <property name="updateDate" type="timestamp">
-            <column name="update_date" />
         </property>
     </class>
 </hibernate-mapping>

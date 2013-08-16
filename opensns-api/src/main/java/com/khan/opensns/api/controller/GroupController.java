@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.khan.opensns.api.service.GroupService;
+import com.khan.opensns.api.service.UserService;
 import com.khan.opensns.dto.BodyResponse;
 import com.khan.opensns.dto.DataResponse;
 import com.khan.opensns.model.Group;
 import com.khan.opensns.model.User;
-import com.khan.opensns.service.GroupService;
-import com.khan.opensns.service.UserService;
 import com.khan.opensns.vo.GroupVo;
 
-@Controller
-@RequestMapping("/api/group")
+//@Controller
+//@RequestMapping("/api/group")
 public class GroupController extends BaseController {
 	
 	@Autowired

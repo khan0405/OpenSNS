@@ -26,6 +26,10 @@ import com.khan.opensns.api.dao.FeedContentDao;
 import com.khan.opensns.api.dao.FeedDao;
 import com.khan.opensns.api.dao.FeedLikeDao;
 import com.khan.opensns.api.dao.FeedReplyDao;
+import com.khan.opensns.api.service.FeedService;
+import com.khan.opensns.api.service.FriendService;
+import com.khan.opensns.api.service.UserService;
+import com.khan.opensns.dao.ListOrder;
 import com.khan.opensns.model.Feed;
 import com.khan.opensns.model.FeedContent;
 import com.khan.opensns.model.FeedLike;
@@ -33,11 +37,8 @@ import com.khan.opensns.model.FeedReply;
 import com.khan.opensns.model.Friend;
 import com.khan.opensns.model.User;
 import com.khan.opensns.model.persistence.FriendType;
-import com.khan.opensns.service.FeedService;
-import com.khan.opensns.service.FriendService;
 import com.khan.opensns.service.ImageService;
 import com.khan.opensns.service.UserNotFoundException;
-import com.khan.opensns.service.UserService;
 import com.khan.opensns.vo.FeedLikeVo;
 import com.khan.opensns.vo.FeedReplyVo;
 import com.khan.opensns.vo.ImageVo;
@@ -148,14 +149,14 @@ public class FeedServiceImpl implements FeedService {
 	}
 
 	@Override
-	public List<Feed> getNewsFeeds(User user, Integer page, Integer size) {
-		return feedDao.getNewsFeed(user, page, size);
+	public List<Feed> getNewsFeeds(User user, Long lastId, ListOrder order, Integer size) {
+		return feedDao.getNewsFeed(user, lastId, order, size);
 	}
 	
 	@Override
-	public List<Feed> getUserFeeds(User user, String targetName, Integer page, Integer size) throws UserNotFoundException {
+	public List<Feed> getUserFeeds(User user, String targetName, Long lastId, ListOrder order, Integer size) throws UserNotFoundException {
 		if (user.getName().equals(targetName)) {
-			return feedDao.getByUser(user, page, size);
+			return feedDao.getByUser(user, lastId, order, size);
 		} else {
 			User targetUser = userService.loadUserByName(targetName);
 			
@@ -167,7 +168,7 @@ public class FeedServiceImpl implements FeedService {
 				}
 			}
 			
-			return feedDao.getUserFeed(user, targetUser, page, size);
+			return feedDao.getUserFeed(user, targetUser, lastId, order, size);
 		}
 	}
 

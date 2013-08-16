@@ -27,14 +27,14 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.khan.opensns.api.dao.UserDao;
 import com.khan.opensns.api.dao.UserInfoDao;
+import com.khan.opensns.api.service.RoleService;
+import com.khan.opensns.api.service.UserService;
 import com.khan.opensns.model.User;
 import com.khan.opensns.model.UserInfo;
 import com.khan.opensns.service.FileSaveService;
 import com.khan.opensns.service.ImageService;
-import com.khan.opensns.service.RoleService;
 import com.khan.opensns.service.UserExistsException;
 import com.khan.opensns.service.UserNotFoundException;
-import com.khan.opensns.service.UserService;
 import com.khan.opensns.util.KeyGenerator;
 import com.khan.opensns.vo.ImageVo;
 import com.khan.opensns.vo.UserVo;

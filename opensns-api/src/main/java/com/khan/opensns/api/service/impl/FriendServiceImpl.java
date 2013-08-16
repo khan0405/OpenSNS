@@ -18,12 +18,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.khan.opensns.api.dao.FriendDao;
+import com.khan.opensns.api.service.FriendService;
+import com.khan.opensns.api.service.UserService;
 import com.khan.opensns.model.Friend;
 import com.khan.opensns.model.User;
 import com.khan.opensns.model.persistence.FriendType;
-import com.khan.opensns.service.FriendService;
 import com.khan.opensns.service.UserNotFoundException;
-import com.khan.opensns.service.UserService;
 
 /**
  * <PRE>
